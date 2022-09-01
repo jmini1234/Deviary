@@ -4,7 +4,7 @@
 
 먼저 `CI/CD`에 대해서 간단하게 알아보자.
 
-![출처=깃랩](Gitlab%20CI%20CD%20Runner%209de46a035da24846a69ab88e6d8639c2/9e23f039e79b4c9e-thumbnail-1920x1080-70.jpeg)
+![9e23f039e79b4c9e-thumbnail-1920x1080-70](https://user-images.githubusercontent.com/37237145/187940125-f8dd6561-2b02-48d4-bef5-590c1c2119a0.jpeg)
 
 출처=깃랩
 
@@ -27,7 +27,8 @@
 
 ~~한 프로젝트는 한 사람만 수정 및 배포할 수 있다는 … 일정 꼬이는 경우 빈번~~ 
 
-이상적인 프로세스는 다음과 같다 .. 
+
+이상적인 프로세스는 다음과 같다 
 
 ---
 
@@ -59,22 +60,22 @@
 5. 통합 시 발생할 수 있는 문제점 파악 가능
 6. 다른 모듈과의 충돌을 조기에 발견 (코드를 통합하기 전, 테스트가 가능 …!)
 
-- Gitlab CI/CD란 ?
-    
-    **Continuous Integration ⇒ 지속적 통합**
-    
-    - 코드 충돌 방지
-    - 코드 변경 사항이 버그 테스트를 거쳐 병합 됨
-    
-    **Continuous Delivery** 
-    
-    - 유효한 코드를 배포(운영) 가능 환경의 레포지토리에 릴리즈
-    
-    **Continuous Deployment**
-    
-    - GitLab/GitHub 등에서 자동 릴리즈
-        
-        (형상관리 툴과는 연동이 안되어있지만 파일을 올리면 서버에 자동 배포되는 프로세스는 현재 존재)
+### Gitlab CI/CD란 ?
+
+**Continuous Integration ⇒ 지속적 통합**
+
+- 코드 충돌 방지
+- 코드 변경 사항이 버그 테스트를 거쳐 병합 됨
+
+**Continuous Delivery** 
+
+- 유효한 코드를 배포(운영) 가능 환경의 레포지토리에 릴리즈
+
+**Continuous Deployment**
+
+- GitLab/GitHub 등에서 자동 릴리즈
+
+    (형상관리 툴과는 연동이 안되어있지만 파일을 올리면 서버에 자동 배포되는 프로세스는 현재 존재)
         
     
 
