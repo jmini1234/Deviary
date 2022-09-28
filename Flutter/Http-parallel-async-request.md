@@ -39,7 +39,7 @@ for(int i=0;i<krStockCodeList.length;i++){
 
 ```dart
 return Future.wait<KrStock>(krStockCodeList.map((stockCode) =>
-      http.get(Uri.parse('https://securities.miraeasset.com/bp/c030.json?gubn=D&code=' + stockCode + "&count=5&date="+currentDay+"&unit=1&dataIndex=1&gap=1")).then((response){
+      http.get("URI").then((response){
         Map<String, dynamic> json = jsonDecode(response.body);
 				// json serializer
 				return KrStock.fromJson(json);
@@ -49,7 +49,7 @@ return Future.wait<KrStock>(krStockCodeList.map((stockCode) =>
 [방법 2]
 
 ```dart
-List<Response> list = await Future.wait(krStockCodeList.map((stockCode) => http.get(Uri.parse('https://securities.miraeasset.com/bp/c030.json?gubn=D&code=' + stockCode + "&count=5&date="+currentDay+"&unit=1&dataIndex=1&gap=1"))));
+List<Response> list = await Future.wait(krStockCodeList.map((stockCode) => http.get(Uri.parse("URL"))));
       
     return list.map((response){
       Map<String, dynamic> json = jsonDecode(response.body);
